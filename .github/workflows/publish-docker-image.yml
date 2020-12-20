@@ -1,4 +1,4 @@
----
+
 name: Publish Ansible image
 on:
   push:
