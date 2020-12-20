@@ -13,9 +13,10 @@ jobs:
         uses: actions/checkout@v2
 
 
-      - name: Get the version (via gloabl env file)
+      - name: Get the version (via step env)
+        id: get_version 
         run: |
-          echo VERSION=${GITHUB_REF/refs\/tags\//} >> $GITHUB_ENV
+          echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
@@ -32,5 +33,5 @@ jobs:
         with:
           file: ./Dockerfile
           push: true
-          tags: acrawly/ansible-runner:$VERSION
+          tags: acrawly/ansible-runner:${{ steps.get_version.outputs.VERSION }}
       
