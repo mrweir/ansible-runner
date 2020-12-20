@@ -45,5 +45,5 @@ jobs:
         with:
           file: ./Dockerfile
           push: true
-          tags: acrawly/ansible-runner:${{SOURCE_TAG}}
+          tags: acrawly/ansible-runner:$SOURCE_TAG
       
