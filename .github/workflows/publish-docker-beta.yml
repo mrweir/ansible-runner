@@ -1,5 +1,5 @@
 
-name: Publish Ansible image
+name: Publish ansible-runner beta
 on:
   push:
     branches: 
