@@ -1,7 +1,5 @@
 FROM python:3.7.6-stretch
 
-RUN apt upgrade *
-
 #boto3 used for AWS commands
 RUN apt install python3-boto3
 
