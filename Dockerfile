@@ -10,5 +10,3 @@ RUN apt-get update -y && \
     sshpass
 
 WORKDIR /playbooks
-
-ENTRYPOINT [ "/usr/local/bin" ]
