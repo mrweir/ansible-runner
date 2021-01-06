@@ -14,4 +14,8 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2
 RUN unzip awscliv2.zip
 RUN ./aws/install
 
+#fix for boto3 to find AWS config
+ENV AWS_SHARED_CREDENTIALS_FILE=/root/.aws/credentials
+ENV AWS_CONFIG_FILE=/root/.aws/config
+
 WORKDIR /playbooks
