@@ -10,6 +10,9 @@ RUN pip install ansible==2.10.4
 RUN pip install pyvmomi
 RUN pip install pyvim
 
+#dig for doing DNS lookups
+RUN pip install dnspython
+
 #Windows things
 RUN pip install pywinrm
 
