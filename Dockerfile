@@ -1,6 +1,7 @@
 FROM python:3.7.6-stretch
 
 
+RUN apt install vi
 
 RUN pip install pip --upgrade
 
