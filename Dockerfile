@@ -5,7 +5,7 @@ FROM python:3.7.6-stretch
 RUN pip install pip --upgrade
 
 RUN pip install ansible==2.10.4
-RUN pip install vi
+RUN apt-get update && apt-get install -y vim-tiny
 
 #VMWare things
 RUN pip install pyvmomi
