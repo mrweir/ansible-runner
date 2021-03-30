@@ -11,7 +11,8 @@ RUN apt-get update && apt-get install -y vim-tiny
 RUN pip install pyvmomi
 RUN pip install pyvim
 COPY resources/ resources/
-RUN pip install resources/vsanapiutils-7.0U2.tar.gz
+# RUN pip install resources/vsanapiutils-7.0U2.tar.gz
+RUN pip install resources/vsan-sdk-7.0U2.tar.gz
 
 #dig for doing DNS lookups
 RUN pip install dnspython
