@@ -33,5 +33,5 @@ jobs:
         with:
           file: ./Dockerfile
           push: true
-          tags: acrawly/ansible-runner:${{ steps.get_version.outputs.VERSION }}
+          tags: mrweir/ansible-runner:${{ steps.get_version.outputs.VERSION }}
       
