@@ -1,6 +1,7 @@
 
 name: Publish ansible-runner release
 on:
+  workflow_dispatch:
   release:
     type: 
       - published
